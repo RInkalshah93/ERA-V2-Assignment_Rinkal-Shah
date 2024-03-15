@@ -1,4 +1,4 @@
-# Backpropagation for 2 Input and 2 Output Neural Network
+# Backpropagation and Neural Network with Basic example
 
 Backpropagation is a concept in training neural networks. It involves adjusting the weights of the connections between neurons to minimize the difference between the actual output and the desired output. This process is crucial for the network to learn and improve its performance over time.
 
