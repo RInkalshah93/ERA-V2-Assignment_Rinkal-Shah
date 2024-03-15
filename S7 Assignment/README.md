@@ -21,7 +21,7 @@
 # Step 2
 ## Target:
 1) Added GAP
-2) Added Dropout to all layer after Relu
+2) Added Dropout to all layer
 3) Almost gain good result with less parameter then step_1
 
 ## Results:
@@ -35,12 +35,11 @@
 
 # Step 3
 ## Target:
-1) Added GAP
-2) Adjusted location of Dropout, Batch-norm and max pool
-3) Reduce the Dropout value to 0.10
-4) Added scheduler
-5) In optimizer changed Lr to 0.02 for batter result
-6) fix the location of max pool
+1) Adjusted location of Dropout, Batch-norm and max pool
+2) Reduce the Dropout value to 0.10
+3) Added scheduler
+4) In optimizer changed Lr to 0.02 for batter result
+5) fix the location of max pool
 
 
 ## Results:
