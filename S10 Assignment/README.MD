@@ -11,17 +11,17 @@ The code includes procedures for training and testing the model to evaluate its 
 
 ## Graphs
 ### Several graphs are plotted to visualize the training and testing process:
-1. Training Loss: ![Training Loss](image.png)
-2. Test Loss: ![Test Loss](image-1.png)
-3. Training Accuracy: ![Training Accuracy](image-2.png)
-4. Test Accuracy: ![Test Accuracy](image-3.png)
+1. Training Loss: ![Training Loss](image-1.png)
+2. Test Loss: ![Test Loss](image-2.png)
+3. Training Accuracy: ![Training Accuracy](image-3.png)
+4. Test Accuracy: ![Test Accuracy](image-4.png)
 ### LRFinder and suggested max_LR
-- ![](image-5.png)
+- ![](image.png)
 ### Collection of Misclassified Images
 The code generates a collection of misclassified images along with their actual and predicted labels.
-![Misclassified Images](image-4.png)
+![Misclassified Images](image-5.png)
 
 ## Results
-- Training Accuracy: 97.08
-- Test Accuracy: 91.79
+- Training Accuracy: 96.64
+- Test Accuracy: 90.53
 
