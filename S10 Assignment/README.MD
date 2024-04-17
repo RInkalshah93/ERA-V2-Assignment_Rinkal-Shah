@@ -8,14 +8,16 @@ The code includes procedures for training and testing the model to evaluate its 
 - LRfinder is utilized to determine the maximum learning rate required to achieve the highest training and test accuracies.
 - The One Cycle Policy is employed to reach high accuracy while using fewer resources and epochs.
 
+
 ## Graphs
-Several graphs are plotted to visualize the training and testing process:
+### Several graphs are plotted to visualize the training and testing process:
 1. Training Loss: ![Training Loss](image.png)
 2. Test Loss: ![Test Loss](image-1.png)
 3. Training Accuracy: ![Training Accuracy](image-2.png)
 4. Test Accuracy: ![Test Accuracy](image-3.png)
-
-## Collection of Misclassified Images
+### LRFinder and suggested max_LR
+- ![](image-5.png)
+### Collection of Misclassified Images
 The code generates a collection of misclassified images along with their actual and predicted labels.
 ![Misclassified Images](image-4.png)
 
