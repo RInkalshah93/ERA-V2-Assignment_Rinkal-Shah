@@ -7,7 +7,7 @@ from torchvision import datasets, transforms
 import matplotlib.pyplot as plt
 import numpy as np
 %cd ERA-V2-Support
-from model import ResNet18
+from Model.model_11 import ResNet18
 import dataset
 import train
 import utils
