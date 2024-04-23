@@ -7,7 +7,7 @@ This repository contains code for implementing LRfinder and One Cycle Policy in 
 The code includes procedures for training and testing the model to evaluate its performance. It tracks and plots training and test losses, as well as training and test accuracies over epochs. Additionally, it provides visualizations of misclassified images along with their true and predicted labels to analyze the model's behavior.
 - LRfinder is utilized to determine the maximum learning rate required to achieve the highest training and test accuracies.
 - The One Cycle Policy is employed to reach high accuracy while using fewer resources and epochs.
-- Grad-cam help to find at perticuler layer where the focus is on while detecting image.
+- Grad-cam help to find at perticuler layer where is the focus is on while detecting image.
 
 
 ## Graphs
