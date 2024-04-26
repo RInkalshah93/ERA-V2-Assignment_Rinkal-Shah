@@ -12,10 +12,14 @@ The code includes procedures for training and testing the model to evaluate its 
 
 ## Graphs
 ### Several graphs are plotted to visualize the training and testing process:
-1. Training Loss: ![Training Loss](image-1.png)
-2. Test Loss: ![Test Loss](image-2.png)
-3. Training Accuracy: ![Training Accuracy](image-3.png)
-4. Test Accuracy: ![Test Accuracy](image-4.png)
+1. Training Loss:  
+![Training Loss](image-1.png)
+2. Test Loss:  
+![Test Loss](image-2.png)
+3. Training Accuracy:  
+![Training Accuracy](image-3.png)
+4. Test Accuracy:  
+![Test Accuracy](image-4.png)
 ### LRFinder and suggested max_LR
 - ![](image.png)
 ### Collection of Misclassified Images
@@ -27,6 +31,6 @@ The code generates a collection of misclassified images along with their actual 
 - Training Accuracy: 90.95
 - Test Accuracy: 90.54
 
-link to main.py : https://github.com/RInkalshah93/ERA-V2-Support/blob/main/main/main_11.py 
+link to main.py : https://github.com/RInkalshah93/ERA-V2-Support/blob/main/main/main_11.py  
 link to support file for Assigment 10 and 11 : https://github.com/RInkalshah93/ERA-V2-Support.git 
 
