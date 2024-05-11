@@ -54,7 +54,7 @@ utils.plot_image(train_loader)
 
 device = utils.get_device()
 model = ResNet18().to(device)
-EPOCHS = 3
+EPOCHS = 25
 
 trainer = Trainer(
     accelerator = device,
