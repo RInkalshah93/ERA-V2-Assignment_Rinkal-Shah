@@ -39,6 +39,7 @@ def get_device():
     return device
 
 
+
 def get_misclassified_data(model, device, test_loader):
     """
     Function to run the model on test set and return misclassified images

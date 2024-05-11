@@ -63,7 +63,7 @@ trainer = Trainer(
     #progress_bar_refresh_rate = 20,
 )
 
-trainer.fit(model, train_loader)
+trainer.fit(model, train_loader, test_loader)
 
 trainer.test(model, test_loader)
 
