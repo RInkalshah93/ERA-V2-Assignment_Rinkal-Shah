@@ -27,32 +27,32 @@ torch.manual_seed(SEED)
 if cuda:
     torch.cuda.manual_seed(SEED)
 
-train_data = dataset.train()
+train_data = Support.dataset.train()
 
-test_data = dataset.test()
+test_data = Support.dataset.test()
 
 if cuda:
     batch_size = 128
     shuffle = True
     num_workers = 2
     pin_memory = True
-    train_loader = dataset.get_train_loader(batch_size,shuffle,num_workers,pin_memory,train_data)
-    test_loader = dataset.get_train_loader(batch_size,shuffle,num_workers,pin_memory,test_data)
+    train_loader = Support.dataset.get_train_loader(batch_size,shuffle,num_workers,pin_memory,train_data)
+    test_loader = Support.dataset.get_train_loader(batch_size,shuffle,num_workers,pin_memory,test_data)
 else:
     batch_size =64
     shuffle = True
     num_workers =1
     pin_memory = True
-    train_loader = dataset.get_train_loader(batch_size,shuffle,num_workers,pin_memory,train_data)
-    test_loader = dataset.get_train_loader(batch_size,shuffle,num_workers,pin_memory,test_data)
+    train_loader = Support.dataset.get_train_loader(batch_size,shuffle,num_workers,pin_memory,train_data)
+    test_loader = Support.dataset.get_train_loader(batch_size,shuffle,num_workers,pin_memory,test_data)
 
 classes = ('plane', 'car', 'bird', 'cat',
                 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
 
 # functions to show an image
-utils.plot_image(train_loader)
+Support.utils.plot_image(train_loader)
 
-device = utils.get_device()
+device = Support.utils.get_device()
 model = ResNet18().to(device)
 EPOCHS = 25
 
@@ -69,19 +69,19 @@ trainer.test(model, test_loader)
 
 #train.plot_loss_accuracy(train_losses,train_acc,test_losses,test_acc)
 
-misclassified_data = utils.get_misclassified_data(model, device, test_loader)
+misclassified_data = Support.utils.get_misclassified_data(model, device, test_loader)
 
 inv_normalize = transforms.Normalize(
     mean=[-0.50/0.4914, -0.50/0.4822, -0.50/0.4465],
     std=[1/0.2023, 1/0.1994, 1/0.2010]
 )
 
-utils.display_cifar_misclassified_data(misclassified_data, classes, inv_normalize, number_of_samples=20)
+Support.utils.display_cifar_misclassified_data(misclassified_data, classes, inv_normalize, number_of_samples=20)
 
 target_layers = [model.layer4[-1]]
 # targets = [ClassifierOutputTarget(7)]
 targets = None
 
-utils.display_gradcam_output(misclassified_data, classes, inv_normalize, model, target_layers, targets, number_of_samples=20, transparency=0.70)
+Support.utils.display_gradcam_output(misclassified_data, classes, inv_normalize, model, target_layers, targets, number_of_samples=20, transparency=0.70)
 
 torch.save(model.state_dict(), "model.pth")
