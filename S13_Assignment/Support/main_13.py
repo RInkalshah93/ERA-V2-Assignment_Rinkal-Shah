@@ -7,10 +7,10 @@ from torchvision import datasets, transforms
 import matplotlib.pyplot as plt
 import numpy as np
 #%cd ERA-V2-Support
-from model_13 import ResNet18
-import dataset
-import train
-import utils
+from Support.model_13 import ResNet18
+import Support.dataset
+import Support.train
+import Support.utils
 from pytorch_lightning import Trainer 
 
 
