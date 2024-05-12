@@ -76,12 +76,12 @@ inv_normalize = transforms.Normalize(
     std=[1/0.2023, 1/0.1994, 1/0.2010]
 )
 
-Support.utils.display_cifar_misclassified_data(misclassified_data, classes, inv_normalize, number_of_samples=20)
+Support.utils.display_cifar_misclassified_data(misclassified_data, classes, inv_normalize, number_of_samples=10)
 
 target_layers = [model.layer4[-1]]
 # targets = [ClassifierOutputTarget(7)]
 targets = None
 
-Support.utils.display_gradcam_output(misclassified_data, classes, inv_normalize, model, target_layers, targets, number_of_samples=20, transparency=0.70)
+Support.utils.display_gradcam_output(misclassified_data, classes, inv_normalize, model, target_layers, targets, number_of_samples=10, transparency=0.70)
 
 torch.save(model.state_dict(), "model.pth")
