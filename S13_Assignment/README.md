@@ -82,13 +82,14 @@ The code includes procedures for training and testing the model to evaluate its 
 ## Training Log 
     Epoch 24: 100% 391/391 [00:44<00:00,  8.79it/s, v_num=0, val_loss=-9.79, val_acc=0.899]
 ## Perfomace Graph
-![Validation Accuracy](./images/Val_acc.png)  
-
-### Collection of Misclassified Images
-The code generates a collection of misclassified images along with their actual and predicted labels.
-![Misclassified Images](image.png)
-The code generates a collection of misclassified images along with their actual and predicted labels.
-![Grade-cam of Mosclassified Images](image-1.png)
+1) Validation Accuracy
+![Validation Accuracy](./images/Val_acc.png)
+2) Validation Loss  
+![Validation loss](./images/Val_loss.png)
+### Misclassified Images
+![Misclassified Images](./images/misclassified_images)
+### GradeCAM of Misclassified Images
+![Grade-cam of Mosclassified Images](./images/GradCAM_of_misclassified_images.png)
 ## Results
 - Val_Accuracy: 89.49
 
