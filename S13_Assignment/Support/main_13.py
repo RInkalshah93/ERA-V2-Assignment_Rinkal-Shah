@@ -12,6 +12,7 @@ import Support.dataset
 import Support.train
 import Support.utils
 from pytorch_lightning import Trainer 
+from pytorch_lightning.callbacks import ModelSummary
 
 
 
@@ -57,6 +58,7 @@ model = ResNet18().to(device)
 EPOCHS = 25
 
 trainer = Trainer(
+    callbacks=[ModelSummary(max_depth=-1)],
     accelerator = device,
     max_epochs = EPOCHS,
     enable_progress_bar = True
