@@ -150,7 +150,7 @@ Start training of collected data using YOLOv9.
     <a href="./">
         <img src="./Images/EC-2 Training.png" width="79%"/>
     </a>
-</div
+</div>
 
 ## Training Batch Result
 
@@ -158,7 +158,7 @@ Start training of collected data using YOLOv9.
     <a href="./">
         <img src="./Images/train_batch0.jpg" width="79%"/>
     </a>
-</div
+</div>
 
 ## Prediction
 
@@ -166,14 +166,14 @@ Start training of collected data using YOLOv9.
     <a href="./">
         <img src="./Images/val_batch0_pred.jpg" width="79%"/>
     </a>
-</div
+</div>
 
 ## Gradio App
 <div align="center">
     <a href="./">
         <img src="./Images/Gradio_App.png" width="79%"/>
     </a>
-</div
+</div>
 
 
 ## Gradio App Link
