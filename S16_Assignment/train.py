@@ -25,7 +25,7 @@ import torchmetrics
 from torch.utils.tensorboard import SummaryWriter
 
 torch.cuda.empty_cache()
-os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:12240"
+#os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:12240"
 config = get_config()
 
 def greedy_decode(model, source, source_mask, tokenizer_src, tokenizer_tgt, max_len, device):
