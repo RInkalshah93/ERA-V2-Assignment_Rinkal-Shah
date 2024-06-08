@@ -3,7 +3,6 @@ torchtext
 pytorch_lightning
 datasets
 tensorboard
-os
 pathlib
 tqdm
 torchmetrics
