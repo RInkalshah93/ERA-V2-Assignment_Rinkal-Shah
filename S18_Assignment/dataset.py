@@ -81,7 +81,7 @@ class BillingualDataset(Dataset):
             "src_text": src_text,
             "tgt_text": tgt_text,
             "encoder_str_length": len(enc_input_tokens),
-            "dencoder_str_length": len(dec_input_tokens)
+            "decoder_str_length": len(dec_input_tokens)
             }
     
 def casual_mask(size):

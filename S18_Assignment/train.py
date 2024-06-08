@@ -167,29 +167,29 @@ def get_ds(config):
 
 def collate_fn(batch):
     encoder_input_max = max(x["encoder_str_length"] for x in batch)
-    dencoder_input_max = max(x["dencoder_str_length"] for x in batch)
+    decoder_input_max = max(x["decoder_str_length"] for x in batch)
 
     encoder_inputs = []
-    dencoder_inputs = []
+    decoder_inputs = []
     encoder_mask = []
-    dencoder_mask = []
+    decoder_mask = []
     label = []
     src_text = []
     tgt_text = []
 
     for b in batch:
         encoder_inputs.append(b["encoder_input"][:encoder_input_max])
-        dencoder_inputs.append(b["dencoder_input"][:dencoder_input_max])
+        decoder_inputs.append(b["decoder_input"][:decoder_input_max])
         encoder_mask.append(b["encoder_mask"][0, 0, :encoder_input_max].unsqueeze(0).unsqueeze(0).unsqueeze(0).int())
-        dencoder_mask.append(b["dencoder_mask"][0, :dencoder_input_max, :dencoder_input_max].unsqueeze(0).unsqueeze(0))
-        label.append(b["label"][:dencoder_input_max])
+        decoder_mask.append(b["decoder_mask"][0, :decoder_input_max, :decoder_input_max].unsqueeze(0).unsqueeze(0))
+        label.append(b["label"][:decoder_input_max])
         src_text.append(b["src_text"])
-        tgt_text.append(b["tgt_test"])
+        tgt_text.append(b["tgt_text"])
         return{
             "encoder_input":torch.vstack(encoder_inputs),
-            "dencoder_input":torch.vstack(dencoder_inputs),
+            "decoder_input":torch.vstack(decoder_inputs),
             "encoder_mask":torch.vstack(encoder_mask),
-            "dencoder_mask":torch.vstack(dencoder_mask),
+            "decoder_mask":torch.vstack(decoder_mask),
             "label":torch.vstack(label),
             "src_text":src_text,
             "tgt_text":tgt_text
