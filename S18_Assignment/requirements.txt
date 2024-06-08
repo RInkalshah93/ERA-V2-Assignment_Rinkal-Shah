@@ -7,4 +7,3 @@ os
 pathlib
 tqdm
 torchmetrics
-torch
