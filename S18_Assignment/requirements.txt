@@ -1,0 +1,11 @@
+tokenizers
+torchtext
+pytorch_lightning
+datasets
+tensorboard
+warnings
+os
+pathlib
+tqdm
+torchmetrics
+torch
