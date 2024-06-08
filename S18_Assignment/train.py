@@ -89,7 +89,7 @@ def run_validation(model, val_dataloader, tokenizer_src, tokenizer_tgt, max_len,
             source_texts.append(source_text)
             expected.append(target_text)
             predicted.append(model_out_text)
-    """        
+            
             print("SOURCE", source_text)
             print("TARGET", target_text)
             print("PREDICTED", model_out_text)
@@ -110,7 +110,7 @@ def run_validation(model, val_dataloader, tokenizer_src, tokenizer_tgt, max_len,
         writer.add_scalar('validation BLEU', bleu, global_step)
         writer.flush()
         
-     """   
+     
 
 def get_all_sentenses(ds, lang):
     for item in ds:
