@@ -160,7 +160,7 @@ def get_ds(config):
     print(f"Max length of the source sentence : {max_len_src}")
     print(f"Max length of the source target : {max_len_tgt}")
     
-    train_dataloader = DataLoader(train_ds, batch_size = config["batch_size"], shuffle = True)
+    train_dataloader = DataLoader(train_ds, batch_size = config["batch_size"], shuffle = True, collate_fn= collate_fn)
     val_dataloader = DataLoader(val_ds, batch_size = 1, shuffle = True)
     
     return train_dataloader, val_dataloader, tokenizer_src, tokenizer_tgt
