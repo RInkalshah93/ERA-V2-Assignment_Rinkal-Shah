@@ -160,12 +160,12 @@ def get_ds(config):
     print(f"Max length of the source sentence : {max_len_src}")
     print(f"Max length of the source target : {max_len_tgt}")
     
-    train_dataloader = DataLoader(train_ds, batch_size = config["batch_size"], shuffle = True,collate_fn=collate_fn)
+    train_dataloader = DataLoader(train_ds, batch_size = config["batch_size"], shuffle = True)
     val_dataloader = DataLoader(val_ds, batch_size = 1, shuffle = True)
     
     return train_dataloader, val_dataloader, tokenizer_src, tokenizer_tgt
 
-def collate_fn(batch):
+'''def collate_fn(batch):
     encoder_input_max = max(x["encoder_str_length"] for x in batch)
     decoder_input_max = max(x["decoder_str_length"] for x in batch)
 
@@ -194,7 +194,7 @@ def collate_fn(batch):
             "src_text":src_text,
             "tgt_text":tgt_text
         }
-
+'''
 
 def get_model(config, src_vocab_size, tgt_vocab_size):
     model = build_transformer(src_vocab_size, tgt_vocab_size, config["seq_len"], config["seq_len"], d_model=config['d_model'])
