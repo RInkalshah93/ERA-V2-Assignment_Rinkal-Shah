@@ -186,13 +186,13 @@ def collate_fn(batch):
         src_text.append(b["src_text"])
         tgt_text.append(b["tgt_text"])
         return{
-            "encoder_input":torch.vstack(encoder_inputs),
-            "decoder_input":torch.vstack(decoder_inputs),
-            "encoder_mask":torch.vstack(encoder_mask),
-            "decoder_mask":torch.vstack(decoder_mask),
-            "label":torch.vstack(label),
-            "src_text":src_text,
-            "tgt_text":tgt_text,
+            "encoder_input": torch.vstack(encoder_inputs),
+            "decoder_input": torch.vstack(decoder_inputs),
+            "encoder_mask": torch.vstack(encoder_mask),
+            "decoder_mask": torch.vstack(decoder_mask),
+            "label": torch.vstack(label),
+            "src_text": src_text,
+            "tgt_text": tgt_text,
         }
 
 
