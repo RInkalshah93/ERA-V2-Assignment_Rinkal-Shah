@@ -1,0 +1,7 @@
+tiktoken
+torch
+torchaudio
+torchmetrics
+torchtext
+torchvision
+transformers
