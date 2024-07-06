@@ -1,6 +1,5 @@
-# GPT-3 Paper 
-# add cosing delay  
 import os
+import time
 import math
 import time
 import inspect
@@ -8,6 +7,7 @@ from dataclasses import dataclass
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
+torch._dynamo.reset()
 
 class CausalSelfAttention(nn.Module):
 
@@ -40,7 +40,7 @@ class CausalSelfAttention(nn.Module):
         # att = F.softmax(att, dim=-1)
         # y = att @ v # (B, nh, T, T) x (B, nh, T, hs) -> (B, nh, T, hs)
 
-        y = F.scaled_dot_product_attention(q, k, v, is_causal = True) # Flash attention
+        y = F.scaled_dot_product_attention(q, k, v, is_causal=True)
 
         y = y.transpose(1, 2).contiguous().view(B, T, C) # re-assemble all head outputs side by side
         # output projection
@@ -188,7 +188,7 @@ class GPT(nn.Module):
                     sd[k].copy_(sd_hf[k])
 
         return model
-
+    
     def configure_optimizers(self, weight_decay, learning_rate, device_type):
         # start with all of the candidate parameters (that require grad)
         param_dict = {pn: p for pn, p in self.named_parameters()}
@@ -270,7 +270,7 @@ model = GPT(GPTConfig())
 model.to(device)
 model = torch.compile(model, fullgraph=True, backend="cudagraphs")
 
-max_lr = 6e-4 
+max_lr = 6e-4
 min_lr = max_lr * 0.1
 warmup_steps = 10
 max_steps = 5000
@@ -287,7 +287,7 @@ def get_lr(it):
 
 train_loader = DataLoaderLite(B = 16, T = 1024)
 
-# optimizer = torch.optim.AdamW(model.parameters(), lr = 3e-4, betas=(0.9, 0.95), eps=1e-8)
+#optimizer = torch.optim.AdamW(model.parameters(), lr = 3e-4, betas=(0.9, 0.95), eps=1e-8)
 optimizer = model.configure_optimizers(weight_decay=0.1, learning_rate=6e-4, device_type=device)
 for step in range(max_steps):
     t0 = time.time()
@@ -298,12 +298,10 @@ for step in range(max_steps):
     with torch.autocast(device_type=device, dtype=torch.bfloat16):
         logits, loss = model(x, y) 
     loss.backward()
-    norm = torch.nn.utils.clip_grad_norm(model.parameters(), 1.0)
-    # NEW CODE
+    norm = torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
     lr = get_lr(step)
     for param_group in optimizer.param_groups:
         param_group['lr'] = lr
-        
     optimizer.step()
     torch.cuda.synchronize() 
     t1 = time.time()
@@ -311,9 +309,8 @@ for step in range(max_steps):
     tokens_per_sec = (train_loader.B * train_loader.T) / (t1 - t0)
     print(f'step{step} | loss: {loss.item()} | dt: {dt:.2f}ms | tok/sec: {tokens_per_sec: .2f} | norm: {norm:.2f}')
 
-
 print(loss)
-torch.save(model.state_dict(), 'S21_GPT_model.pt')
+torch.save(model.state_dict(), 'model.pt')
 # import sys; sys.exit(0)
 
 # torch.manual_seed(42)
