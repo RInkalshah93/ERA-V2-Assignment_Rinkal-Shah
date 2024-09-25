@@ -55,37 +55,37 @@ with different type of losses and layers.
 
 ### Train logs
     CUDA Available? True
-    Epoch 1
-    Train: Loss=0.1578 Batch_id=28: 100%|██████████| 29/29 [00:17<00:00,  1.70it/s]
-    Test set: Average loss: 0.2559
+   Epoch 1
+    Train: Loss=0.1484 Batch_id=57: 100%|██████████| 58/58 [00:47<00:00,  1.23it/s]
+    Test set: Average loss: 0.2467
     Epoch 2
-    Train: Loss=0.1554 Batch_id=28: 100%|██████████| 29/29 [00:16<00:00,  1.74it/s]
-    Test set: Average loss: 0.2501
+    Train: Loss=0.1479 Batch_id=57: 100%|██████████| 58/58 [00:47<00:00,  1.23it/s]
+    Test set: Average loss: 0.2779
     Epoch 3
-    Train: Loss=0.1305 Batch_id=28: 100%|██████████| 29/29 [00:16<00:00,  1.73it/s]
-    Test set: Average loss: 0.2115
+    Train: Loss=0.1404 Batch_id=57: 100%|██████████| 58/58 [00:47<00:00,  1.23it/s]
+    Test set: Average loss: 0.2347
     Epoch 4
-    Train: Loss=0.1166 Batch_id=28: 100%|██████████| 29/29 [00:16<00:00,  1.71it/s]
-    Test set: Average loss: 0.1905
+    Train: Loss=0.1140 Batch_id=57: 100%|██████████| 58/58 [00:47<00:00,  1.23it/s]
+    Test set: Average loss: 0.2922
     Epoch 5
-    Train: Loss=0.1199 Batch_id=28: 100%|██████████| 29/29 [00:16<00:00,  1.74it/s]
-    Test set: Average loss: 0.1816
+    Train: Loss=0.0940 Batch_id=57: 100%|██████████| 58/58 [00:47<00:00,  1.23it/s]
+    Test set: Average loss: 0.2549
     ...
-    Epoch 21
-    Train: Loss=0.0528 Batch_id=28: 100%|██████████| 29/29 [00:17<00:00,  1.70it/s]
-    Test set: Average loss: 0.0948
+    EEpoch 21
+    Train: Loss=0.0602 Batch_id=57: 100%|██████████| 58/58 [00:47<00:00,  1.23it/s]
+    Test set: Average loss: 0.0989
     Epoch 22
-    Train: Loss=0.0504 Batch_id=28: 100%|██████████| 29/29 [00:17<00:00,  1.69it/s]
-    Test set: Average loss: 0.1257
+    Train: Loss=0.0495 Batch_id=57: 100%|██████████| 58/58 [00:47<00:00,  1.23it/s]
+    Test set: Average loss: 0.1216
     Epoch 23
-    Train: Loss=0.0530 Batch_id=28: 100%|██████████| 29/29 [00:16<00:00,  1.72it/s]
-    Test set: Average loss: 0.0909
+    Train: Loss=0.0561 Batch_id=57: 100%|██████████| 58/58 [00:47<00:00,  1.23it/s]
+    Test set: Average loss: 0.0917
     Epoch 24
-    Train: Loss=0.0492 Batch_id=28: 100%|██████████| 29/29 [00:16<00:00,  1.74it/s]
-    Test set: Average loss: 0.1136
+    Train: Loss=0.0480 Batch_id=57: 100%|██████████| 58/58 [00:47<00:00,  1.23it/s]
+    Test set: Average loss: 0.0814
     Epoch 25
-    Train: Loss=0.0448 Batch_id=28: 100%|██████████| 29/29 [00:16<00:00,  1.74it/s]
-    Test set: Average loss: 0.1120
+    Train: Loss=0.0484 Batch_id=57: 100%|██████████| 58/58 [00:47<00:00,  1.22it/s]
+    Test set: Average loss: 0.0870
 
 ### Performance Graph
 ![MP+Tr+Dice Loss metrics](./images/MP_Tr_Dice_Loss_metrics.png)
@@ -101,36 +101,36 @@ with different type of losses and layers.
 ### Train logs
     CUDA Available? True
     Epoch 1
-    Train: Loss=0.5796 Batch_id=57: 100%|██████████| 58/58 [00:16<00:00,  3.42it/s]
-    Test set: Average loss: 1.3183
+    Train: Loss=0.6212 Batch_id=57: 100%|██████████| 58/58 [00:48<00:00,  1.20it/s]
+    Test set: Average loss: 3.3839
     Epoch 2
-    Train: Loss=0.5894 Batch_id=57: 100%|██████████| 58/58 [00:16<00:00,  3.41it/s]
-    Test set: Average loss: 0.5862
+    Train: Loss=0.6365 Batch_id=57: 100%|██████████| 58/58 [00:48<00:00,  1.20it/s]
+    Test set: Average loss: 0.5912
     Epoch 3
-    Train: Loss=0.5051 Batch_id=57: 100%|██████████| 58/58 [00:17<00:00,  3.39it/s]
-    Test set: Average loss: 0.5981
+    Train: Loss=0.5591 Batch_id=57: 100%|██████████| 58/58 [00:48<00:00,  1.20it/s]
+    Test set: Average loss: 0.5569
     Epoch 4
-    Train: Loss=0.5162 Batch_id=57: 100%|██████████| 58/58 [00:16<00:00,  3.43it/s]
-    Test set: Average loss: 0.5238
+    Train: Loss=0.4087 Batch_id=57: 100%|██████████| 58/58 [00:48<00:00,  1.20it/s]
+    Test set: Average loss: 0.5307
     Epoch 5
-    Train: Loss=0.4325 Batch_id=57: 100%|██████████| 58/58 [00:16<00:00,  3.42it/s]
-    Test set: Average loss: 0.5245
+    Train: Loss=0.5254 Batch_id=57: 100%|██████████| 58/58 [00:48<00:00,  1.20it/s]
+    Test set: Average loss: 0.5210
     ...
     Epoch 21
-    Train: Loss=0.2533 Batch_id=57: 100%|██████████| 58/58 [00:16<00:00,  3.47it/s]
-    Test set: Average loss: 0.4071
+    Train: Loss=0.2764 Batch_id=57: 100%|██████████| 58/58 [00:48<00:00,  1.20it/s]
+    Test set: Average loss: 0.3245
     Epoch 22
-    Train: Loss=0.2243 Batch_id=57: 100%|██████████| 58/58 [00:16<00:00,  3.47it/s]
-    Test set: Average loss: 0.3076
+    Train: Loss=0.3216 Batch_id=57: 100%|██████████| 58/58 [00:48<00:00,  1.20it/s]
+    Test set: Average loss: 0.3163
     Epoch 23
-    Train: Loss=0.2697 Batch_id=57: 100%|██████████| 58/58 [00:16<00:00,  3.48it/s]
-    Test set: Average loss: 0.3325
+    Train: Loss=0.3235 Batch_id=57: 100%|██████████| 58/58 [00:48<00:00,  1.20it/s]
+    Test set: Average loss: 0.3246
     Epoch 24
-    Train: Loss=0.2400 Batch_id=57: 100%|██████████| 58/58 [00:16<00:00,  3.49it/s]
-    Test set: Average loss: 0.4501
+    Train: Loss=0.2630 Batch_id=57: 100%|██████████| 58/58 [00:48<00:00,  1.20it/s]
+    Test set: Average loss: 0.3082
     Epoch 25
-    Train: Loss=0.2470 Batch_id=57: 100%|██████████| 58/58 [00:16<00:00,  3.41it/s]
-    Test set: Average loss: 0.2871
+    Train: Loss=0.2607 Batch_id=57: 100%|██████████| 58/58 [00:48<00:00,  1.20it/s]
+    Test set: Average loss: 0.3117
 
 ### Performance Graph
 ![StrConv+Tr+CE metrics](./images/StrConv_Tr_CE_metrics.png)
@@ -146,31 +146,36 @@ with different type of losses and layers.
 ### Train logs
     CUDA Available? True
     Epoch 1
-    Train: Loss=0.1710 Batch_id=114: 100%|██████████| 115/115 [00:18<00:00,  6.26it/s]
-    Test set: Average loss: 0.1596
+    Train: Loss=0.1853 Batch_id=57: 100%|██████████| 58/58 [00:52<00:00,  1.11it/s]
+    Test set: Average loss: 0.2845
     Epoch 2
-    Train: Loss=0.1415 Batch_id=114: 100%|██████████| 115/115 [00:18<00:00,  6.31it/s]
-    Test set: Average loss: 0.1661
+    Train: Loss=0.1176 Batch_id=57: 100%|██████████| 58/58 [00:52<00:00,  1.11it/s]
+    Test set: Average loss: 0.1839
     Epoch 3
-    Train: Loss=0.1201 Batch_id=114: 100%|██████████| 115/115 [00:18<00:00,  6.29it/s]
-    Test set: Average loss: 0.1223
+    Train: Loss=0.1280 Batch_id=57: 100%|██████████| 58/58 [00:52<00:00,  1.11it/s]
+    Test set: Average loss: 0.1331
     Epoch 4
-    Train: Loss=0.0969 Batch_id=114: 100%|██████████| 115/115 [00:18<00:00,  6.28it/s]
-    Test set: Average loss: 0.1148
+    Train: Loss=0.1377 Batch_id=57: 100%|██████████| 58/58 [00:52<00:00,  1.10it/s]
+    Test set: Average loss: 0.1281
     Epoch 5
-    Train: Loss=0.0990 Batch_id=114: 100%|██████████| 115/115 [00:18<00:00,  6.28it/s]
-    Test set: Average loss: 0.1261
-    Epoch 20
-    Train: Loss=0.0663 Batch_id=114: 100%|██████████| 115/115 [00:17<00:00,  6.42it/s]
-    Test set: Average loss: 0.1391
+    Train: Loss=0.1250 Batch_id=57: 100%|██████████| 58/58 [00:52<00:00,  1.11it/s]
+    Test set: Average loss: 0.1096
+    ...
     Epoch 21
-    Train: Loss=0.0602 Batch_id=114: 100%|██████████| 115/115 [00:17<00:00,  6.43it/s]
-    Test set: Average loss: 0.0642
+    Train: Loss=0.0667 Batch_id=57: 100%|██████████| 58/58 [00:52<00:00,  1.11it/s]
+    Test set: Average loss: 0.0688
     Epoch 22
-    Train: Loss=0.0613 Batch_id=114: 100%|██████████| 115/115 [00:17<00:00,  6.41it/s]
-    Test set: Average loss: 0.0651
+    Train: Loss=0.0645 Batch_id=57: 100%|██████████| 58/58 [00:52<00:00,  1.11it/s]
+    Test set: Average loss: 0.0707
     Epoch 23
-    Train: Loss=0.0561 Batch_id=114: 100%|██████████| 115/115 [00:18<00:00,  6.34it/s]
+    Train: Loss=0.0588 Batch_id=57: 100%|██████████| 58/58 [00:52<00:00,  1.11it/s]
+    Test set: Average loss: 0.0659
+    Epoch 24
+    Train: Loss=0.0537 Batch_id=57: 100%|██████████| 58/58 [00:52<00:00,  1.11it/s]
+    Test set: Average loss: 0.0673
+    Epoch 25
+    Train: Loss=0.0655 Batch_id=57: 100%|██████████| 58/58 [00:52<00:00,  1.11it/s]
+    Test set: Average loss: 0.0656
 
 ### Performance Graph
 ![StrConv+Ups+Dice Loss metrics](./images/StrConv_Ups_Dice_Loss_metrics.png)
@@ -193,8 +198,6 @@ The goal of this assignment is to implement VAE model from scratch for image gen
 with different public data.
 
 ## MNIST data
-<details>
-<summary>Expand</summary>
 
 ### train logs
     Epoch 29: 100% 1500/1500 [01:26<00:00, 17.27it/s, loss=-949, v_num=0]
@@ -202,11 +205,10 @@ with different public data.
 ### Results
 ![MNIST results](./images/mnist_results.png)
 
-</details>
+
 
 ## CIFAR10 data
-<details>
-<summary>Expand</summary>
+
 
 ### train logs
     Epoch 29: 100% 1250/1250 [01:30<00:00, 13.80it/s, loss=-2.93e+03, v_num=1]
@@ -214,7 +216,6 @@ with different public data.
 ### Results
 ![CIFAR10 results](./images/CIFAR10_results.png)
 
-</details>
 
 ## Acknowledgments
 This model is trained using repo listed below
