@@ -199,9 +199,6 @@ with different public data.
 
 ## MNIST data
 
-### train logs
-    Epoch 29: 100% 1500/1500 [01:26<00:00, 17.27it/s, loss=-949, v_num=0]
-
 ### Results
 ![MNIST results](./images/mnist_results.png)
 
@@ -210,14 +207,11 @@ with different public data.
 ## CIFAR10 data
 
 
-### train logs
-    Epoch 29: 100% 1250/1250 [01:30<00:00, 13.80it/s, loss=-2.93e+03, v_num=1]
-
 ### Results
 ![CIFAR10 results](./images/CIFAR10_results.png)
 
 
 ## Acknowledgments
 This model is trained using repo listed below
-* [UNet](https://github.com/AkashDataScience/unet_pytorch)
-* [VAE](https://github.com/AkashDataScience/vae_pytorch)
+* [UNet](hhttps://github.com/RInkalshah93/Unet_Support)
+* [VAE](https://github.com/RInkalshah93/VAE_Support)
