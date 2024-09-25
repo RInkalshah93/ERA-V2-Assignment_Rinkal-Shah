@@ -86,9 +86,9 @@ Compression rario for Hinglish: 3.44
 Compression ratio for English: 3.33
 
 ## Gradio App
-![Gradio-app](./images/gradio_app.png)  
+![Gradio-app](image.png)
 Gradio App can be found [here](https://huggingface.co/spaces/Rinkal4/languageBPE)
 
 ## Acknowledgments
 This model is trained using repo listed below
-* [languageBPE](https://github.com/AkashDataScience/language_bpe)
+* [languageBPE](https://github.com/RInkalshah93/language_bpe_Hindi_English)
