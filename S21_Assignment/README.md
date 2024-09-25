@@ -84,7 +84,7 @@ training. Train model to reach 0.1 loss and deploy it on Huggingface.
 Final loss: 0.0013
 
 ## Gradio App
-![Gradio-app](./images/gradio_app.png)  
+![Gradio-app](image.png)
 Gradio App can be found [here](https://huggingface.co/spaces/AkashDataScience/GPT-2)
 
 ## Acknowledgments
