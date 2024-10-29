@@ -160,9 +160,9 @@ class Game(Widget):
         self.ball1.pos = self.car.sensor1
         self.ball2.pos = self.car.sensor2
         self.ball3.pos = self.car.sensor3
-        self.goal1.pos = (195,110) 
-        self.goal2.pos = (460,460)
-        self.goal3.pos = (995,520)
+        self.goal1.pos = (100,230) 
+        self.goal2.pos = (700,400)
+        self.goal3.pos = (900,330)
 
         if sand[int(self.car.x),int(self.car.y)] > 0:
             self.car.velocity = Vector(0.5, 0).rotate(self.car.angle)
